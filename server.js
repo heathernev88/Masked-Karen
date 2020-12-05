@@ -14,6 +14,8 @@ app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
+} else {
+  app.use(express.static("client/public"));
 }
 
 mongoose.connect(process.env.DATABASE_URL, {
@@ -46,7 +48,7 @@ app.get("/api/stateGuidlines/:state", function(req, res) {
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(path.join(__dirname, "client/public/styles/index.html"));
 });
 
 app.listen(PORT, () => {
