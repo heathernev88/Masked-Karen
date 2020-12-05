@@ -5,8 +5,10 @@ const app = express();
 const morgan = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
+
 // eslint-disable-next-line import/no-unresolved
 const mongoose = require('mongoose');
+require('dotenv').config()
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -48,7 +50,7 @@ app.get("/api/stateGuidlines/:state", function(req, res) {
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/public/styles/index.html"));
+  res.sendFile(path.join(__dirname, "client/public/index.html"));
 });
 
 app.listen(PORT, () => {
