@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0 } from '@auth0/auth0-react';
 import Container from './components/Container';
 import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogoutButton';
@@ -9,7 +9,7 @@ import Map from './components/Map';
 import Footer from './components/Footer';
 
 function App() {
-  const { isLoading } = false; //useAuth0();
+  const { isLoading } = useAuth0();
 
   if (isLoading) return <div>Loading...</div>
 
@@ -20,6 +20,7 @@ function App() {
       <Header />
       <Content />
       <Map />
+      <Covid-info />
       <Footer />
     </Container>
   );
