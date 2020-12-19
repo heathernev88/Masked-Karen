@@ -1,12 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-// import Home from './components/Home';
 import App from "./App";
-// import Auth0ProviderWithHistory from "./auth/AuthOProvider-with-history";
-import { Auth0Provider } from '@auth0/auth0-react'
-// import NavBar from "./components/Nav-bar";
+import { Auth0Provider } from '@auth0/auth0-react';
+import Input from './components/Input'
 
 
 // const domain = process.env.REACT_APP_AUTH0_DOMAIN;
@@ -22,6 +19,7 @@ ReactDOM.render(
         redirectUri = {window.location.origin}
          >
     <App />
+    <Input />
   </Auth0Provider>,
     document.getElementById('root'),
   );

@@ -38,7 +38,7 @@ const Map = () => {
     <div>
     <ReactMapGL
       {...viewport}
-      mapStyle={"mapbox://styles/heathernev88/ckitreztn276t19o2aiy8778y"}
+      mapStyle="mapbox://styles/thecjreynolds/ck117fnjy0ff61cnsclwimyay"
       mapboxApiAccessToken="pk.eyJ1IjoiaGVhdGhlcm5ldjg4IiwiYSI6ImNraXZiOWw2dzA3bzIycXByMzg3bGtvbW8ifQ.yL1UHbxg0jR2tOy_XavpvA"
       onViewportChange={setViewport}
       onDblClick={showAddMarkerPopup}

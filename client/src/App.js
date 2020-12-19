@@ -7,6 +7,7 @@ import Pictures from './components/Your-pictures';
 import "./styles/navbar.css"
 
 import LoginButton from './components/LoginButton';
+import LogoutButton from './components/LogoutButton';
 
 
 
@@ -30,6 +31,9 @@ function App() {
             </li>
             <li>
               <Link to= "/mapofshame">Map Of Shame</Link>
+            </li>
+            <li>
+              <LogoutButton />
             </li>
 
           </ul>

@@ -3,8 +3,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 import "../styles/loginbutton.css"
 
 const LoginButton = () => {
-    const { loginWithRedirect } = useAuth0();
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
     return (
+        !isAuthenticated && (
          (
         <button className="login-button" onClick={() => loginWithRedirect({
             
@@ -14,6 +15,7 @@ const LoginButton = () => {
         }>
             Login
         </button>
+         )
         )
     )
 }

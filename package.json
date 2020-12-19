@@ -29,6 +29,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.11.4",
     "morgan": "^1.10.0",
+    "react-hook-form": "^6.13.1",
     "react-iframe": "^1.8.0",
     "react-map-gl": "^6.0.1",
     "react-router-dom": "^5.2.0"

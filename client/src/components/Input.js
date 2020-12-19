@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-import { createLogEntry } from './API';
+import { createLogEntry } from '../API';
 
-const Input = ({ location, onClose }) => {
+const LogEntryForm = ({ location, onClose }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const { register, handleSubmit } = useForm();
@@ -42,4 +42,4 @@ const Input = ({ location, onClose }) => {
   );
 };
 
-export default Input;
+export default LogEntryForm;
