@@ -1,0 +1,10 @@
+.login-button {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+
+}
+
+.login-button:hover {
+    color: rgb(80, 125, 230);
+}

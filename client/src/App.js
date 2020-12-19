@@ -20,7 +20,7 @@ function App() {
         <nav className="navbar">
           <ul className="nav-links">
             <li>
-              <Link to="/login">Login</Link>
+              <LoginButton />
             </li>
             <li>
               <Link to="/">Home</Link>
@@ -35,7 +35,7 @@ function App() {
           </ul>
         </nav>
         <Route path="/" exact component = {Home} />
-        <Route path="/login" component = {LoginButton}/>
+        {/* <Route path="/login" component = {LoginButton}/> */}
         <Route path="/yourpictures" component = {Pictures}/>
         <Route path="/mapofshame" component = {Map}/>
       </Router>

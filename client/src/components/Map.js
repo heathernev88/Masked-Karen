@@ -35,10 +35,11 @@ const Map = () => {
   };
 
   return (
+    <div>
     <ReactMapGL
       {...viewport}
       mapStyle={"mapbox://styles/heathernev88/ckitreztn276t19o2aiy8778y"}
-      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+      mapboxApiAccessToken="pk.eyJ1IjoiaGVhdGhlcm5ldjg4IiwiYSI6ImNraXZiOWw2dzA3bzIycXByMzg3bGtvbW8ifQ.yL1UHbxg0jR2tOy_XavpvA"
       onViewportChange={setViewport}
       onDblClick={showAddMarkerPopup}
     >
@@ -138,6 +139,8 @@ const Map = () => {
         ) : null
       }
     </ReactMapGL>
+      
+    </div>
   );
 }
 
