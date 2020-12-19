@@ -1,5 +1,5 @@
-.u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("./Images/52e9d4414252ab14f6da8c7dda793678153bdee757596c48732f7ed39449c35eb8_1280.jpg");
+.u-section-1 .pictures {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("./Images/starwarsmask.jpg");
   background-position: 50% 50%;
 }
 
@@ -348,7 +348,7 @@
 
 .u-section-4 .u-image-1 {
   min-height: 590px;
-  background-image: url("./Images/4d5c9c5f-6714-44f5-9d0c-e6b776d85112-Mask.png");
+  background-image: url("./Images/girlcoffeemask.png");
   background-position: 50% 50%;
 }
 
@@ -1219,7 +1219,7 @@
 
 .u-section-10 .u-image-2 {
   min-height: 638px;
-  background-image: url("./Images/043020pandemic_fs3-mask.jpg");
+  background-image: url("./Images/goodneighbormask.jpg");
   background-position: 50% 50%;
 }
 
@@ -1510,6 +1510,7 @@
   background-image: url("./Images/6610859_1200x.jpeg");
   background-position: 50% 50%;
 }
+
 
 .u-section-11 .u-container-layout-6 {
   padding: 20px;

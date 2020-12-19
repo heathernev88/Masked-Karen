@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+import "../styles/map.css"
 
 import { listLogEntries } from '../API';
 import LogEntryForm from '../models/LogEntry';
@@ -36,7 +37,7 @@ const Map = () => {
   return (
     <ReactMapGL
       {...viewport}
-      mapStyle="mapbox://styles/thecjreynolds/ck117fnjy0ff61cnsclwimyay"
+      mapStyle={"mapbox://styles/heathernev88/ckitreztn276t19o2aiy8778y"}
       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
       onViewportChange={setViewport}
       onDblClick={showAddMarkerPopup}
