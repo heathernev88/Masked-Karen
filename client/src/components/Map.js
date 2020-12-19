@@ -5,6 +5,8 @@ import "../styles/map.css"
 import { listLogEntries } from '../API';
 import LogEntryForm from '../models/LogEntry';
 
+import Input from './Input';
+
 const Map = () => {
   const [logEntries, setLogEntries] = useState([]);
   const [showPopup, setShowPopup] = useState({});
@@ -139,7 +141,7 @@ const Map = () => {
         ) : null
       }
     </ReactMapGL>
-      
+      <Input />
     </div>
   );
 }

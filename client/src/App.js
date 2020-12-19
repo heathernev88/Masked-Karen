@@ -8,6 +8,7 @@ import "./styles/navbar.css"
 
 import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogoutButton';
+import Guidelines from './components/StateGuidelines';
 
 
 
@@ -33,6 +34,9 @@ function App() {
               <Link to= "/mapofshame">Map Of Shame</Link>
             </li>
             <li>
+              <Link to= "/guidelines">State COVID-19 Rules</Link>
+            </li>
+            <li>
               <LogoutButton />
             </li>
 
@@ -42,6 +46,7 @@ function App() {
         {/* <Route path="/login" component = {LoginButton}/> */}
         <Route path="/yourpictures" component = {Pictures}/>
         <Route path="/mapofshame" component = {Map}/>
+        <Route path="/guidelines" component = {Guidelines}/>
       </Router>
     );
   };

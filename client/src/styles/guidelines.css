@@ -1,0 +1,16 @@
+.guidelines {
+    background-image: url("./Images/starwarsmask.jpg");
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.state-info {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+.state-name {
+    font-size: 15px;
+}

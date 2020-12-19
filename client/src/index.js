@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { Auth0Provider } from '@auth0/auth0-react';
-import Input from './components/Input'
+import Footer from './components/Footer'
+
 
 
 // const domain = process.env.REACT_APP_AUTH0_DOMAIN;
@@ -19,7 +20,7 @@ ReactDOM.render(
         redirectUri = {window.location.origin}
          >
     <App />
-    <Input />
+    <Footer />
   </Auth0Provider>,
     document.getElementById('root'),
   );
