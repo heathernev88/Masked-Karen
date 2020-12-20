@@ -33,7 +33,7 @@ app.use(cors({
 app.use(express.json());
 
 // Define API routes here
-const stateGuidelines = require("./data/covid-state-data");
+const stateGuidelines = require("./client/src/data/covid-state-data");
 
 app.get("/api/stateGuidlines/:state", function(req, res) {
     var chosen = req.params.state;

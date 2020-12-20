@@ -618,3 +618,5 @@ var simplemaps_usmap_mapdata={
   },
   regions: {}
 };
+
+export default simplemaps_usmap_mapdata;
